@@ -45,51 +45,50 @@ Visit node 3
 
 Now, the Stack becomes empty, which means we have visited all the nodes, and our DFS traversal ends.
 
-<h3>Algorithm:</h3>
-<B><ol>
- <li>Construct a Graph with Nodes and Edges</li>
- <li>Depth First Search Uses Stack and Recursion</li>
- <li>Insert a START node to the STACK</li>
- <li>Find its Successors Or neighbors and Check whether the node is visited or not</li>
- <li>If Not Visited, add it to the STACK. Else Call The Function Again Until No more nodes needs to be visited.</li>
-</ol></B>
+## Algorithm:
+Step1:Construct a Graph with Nodes and Edges
+Step2:Depth First Search Uses Stack and Recursion
+Step3:Insert a START node to the STACK
+Step4:Find its Successors Or neighbors and Check whether the node is visited or not</li>
+Step5:If Not Visited, add it to the STACK. Else Call The Function Again Until No more nodes needs to be visited.
+### program:
+```
+Developed By:P.Siva Naga Nithin
+Reg.No:212221240037
+```
+```
+#import defaultdict
+from collections import defaultdict
+def dfs(graph,start,visited,path):
+    path.append(start)
+    visited[start]=True
+    for neighbour in graph[start]:
+        if visited[neighbour]==False:
+            dfs(graph,neighbour,visited,path)
+            visited[neighbour]=True
+    return path
+graph=defaultdict(list)
+n,e=map(int,input().split())
+for i in range(e):
+    u,v=map(str,input().split())
+    graph[u].append(v)
+    graph[v].append(u)
+#print(graph)
+start='A'
+visited=defaultdict(bool)
+path=[]
+traversedpath=dfs(graph,start,visited,path)
+print(traversedpath)
+```
+### Sample Input
+![AI](https://github.com/nithin-popuri7/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/94154780/07427b82-0bbe-45cf-a3e2-b7adb62bc709)
 
-<hr>
-<h3>Sample Input</h3>
-<hr>
-8 9 <BR>
-A B <BR>
-A C <BR>
-B E <BR>
-C D <BR>
-B D <BR>
-C G <BR>
-D F <BR>
-G F <BR>
-F H <BR>
-<hr>
-<h3>Sample Output</h3>
-<hr>
-['A', 'B', 'E', 'D', 'C', 'G', 'F', 'H']
+### Sample Output:
 
-<hr>
 
-<hr>
-<h3>Sample Input</h3>
-<hr>
-5 5 <BR>
-0 1 <BR>
-0 2 <BR>
-0 3 <BR>
-2 3 <BR>
-2 4 <BR>
-<hr>
-<h3>Sample Output</h3>
-<hr>
-['0', '1', '2', '3', '4']
+![AI1](https://github.com/nithin-popuri7/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/94154780/0b92f6e7-3fbd-492c-8abe-e00153496b89)
 
-<hr>
-<h3>Result:</h3>
-<hr>
-<p>Thus,a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.</p>
+
+### Result:
+Thus,a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.
 
