@@ -62,10 +62,6 @@ Now, Queue becomes empty, So, terminate these process of iteration.
 
 ### Program:
 ```
-DEVELOPED BY : k.sucharitha
-
-REGISTER NUMBER : 212221240021
-
 from collections import deque
 from collections import defaultdict
 def bfs(graph,start,visited,path):
@@ -106,16 +102,11 @@ C D <BR>
 D E <BR>
 D G <BR>
 G F <BR>
-<hr>
-<h3>Sample Output</h3>
-<hr>
+
+### Sample Output:
 ['A', 'B', 'C', 'F', 'E', 'D', 'G']
 
-<hr>
-
-<hr>
-<h3>Sample Input</h3>
-<hr>
+Sample Input:
 5 6 <BR>
 0 1 <BR>
 0 2 <BR>
@@ -123,14 +114,11 @@ G F <BR>
 1 3 <BR>
 2 4 <BR>
 3 4 <BR>
-<hr>
-<h3>Sample Output</h3>
-<hr>
+### Sample Output:
 ![image](https://github.com/nithin-popuri7/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/94154780/1142f07a-ace0-4831-aa6c-8928b196258c)
 
-<h3>Result:</h3>
-<hr>
-<p>Thus,a Graph was constructed and implementation of Breadth First Search for the same graph was done successfully.</p>
+### Result:
+Thus,a Graph was constructed and implementation of Breadth First Search for the same graph was done successfully.
 
 
 
