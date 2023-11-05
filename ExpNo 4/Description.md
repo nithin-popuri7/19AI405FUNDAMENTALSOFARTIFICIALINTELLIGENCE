@@ -1,6 +1,6 @@
 <h1>ExpNo 4 : Implement Simple Hill Climbing Algorithm</h1> 
-<h3>Name:P.Siva Naga Nithin<h3>
-<h3>Register Number:212221240037</h3>
+<h3>Name:P.Siva Naga Nithin
+<h3>Register Number:212221240037
 <H3>Aim:</H3>
 <p>Implement Simple Hill Climbing Algorithm and Generate a String by Mutating a Single Character at each iteration </p>
 <h2> Theory: </h2>
