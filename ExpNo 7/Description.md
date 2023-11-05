@@ -30,7 +30,7 @@ isValid(nodeList, count, word1, word2, word3)<br>
 Input − A list of nodes, the number of elements in the node list and three words.<br>
 
 Output − True if the sum of the value for word1 and word2 is same as word3 value.<br>
-
+```
 Begin<br>
    m := 1<br>
    for each letter i from right to left of word1, do<br>
@@ -71,6 +71,7 @@ Begin<br>
       return true<br>
    return false<br>
 End<br>
+```
 ### Program:
 ```
 from itertools import permutations
