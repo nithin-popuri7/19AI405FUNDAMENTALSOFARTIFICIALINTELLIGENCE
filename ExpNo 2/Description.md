@@ -53,12 +53,12 @@ As we can see that every neighbours of node 4 are visited, so move to the next n
 Remove node 4 from the front of queue and visit the unvisited neighbours and push them into queue.
 Now, Queue becomes empty, So, terminate these process of iteration.
 ### Algorithm:
-<li>Construct a Graph with Nodes and Edges</li>
- <li>Breadth First Uses Queue and iterates through the Queue for Traversal.</li>
-  <li>Insert a Start Node into the Queue.</li>
-<li>Find its Successors Or neighbors and Check whether the node is visited or not.</li>
-<li>If Not Visited, add it to the Queue. Else Continue.</li>
-<li>Iterate steps 4 and 5 until all nodes get visited, and there are no more unvisited nodes.</li>
+Step1:Construct a Graph with Nodes and Edges.
+Step2:Breadth First Uses Queue and iterates through the Queue for Traversal.
+Step3:Insert a Start Node into the Queue.
+Step4:Find its Successors Or neighbors and Check whether the node is visited or not.
+Step5:If Not Visited, add it to the Queue. Else Continue.
+Step6:Iterate steps 4 and 5 until all nodes get visited, and there are no more unvisited nodes.
 
 ### Program:
 ```
@@ -106,7 +106,7 @@ G F <BR>
 ### Sample Output:
 ['A', 'B', 'C', 'F', 'E', 'D', 'G']
 
-Sample Input:
+### Sample Input:
 5 6 <BR>
 0 1 <BR>
 0 2 <BR>
