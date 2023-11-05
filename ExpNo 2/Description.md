@@ -119,7 +119,7 @@ G F <BR>
 1 3 <BR>
 2 4 <BR>
 3 4 <BR>
-### Sample Output:
+### Output:
 ![image](https://github.com/nithin-popuri7/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/94154780/1142f07a-ace0-4831-aa6c-8928b196258c)
 
 ### Result:
