@@ -304,7 +304,11 @@ if __name__ == "__main__":
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/a2acb6a1-ed8e-42e5-8968-fe805e4b0255)
 
 ### Output:
+![image](https://github.com/nithin-popuri7/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/94154780/bf60afbd-29db-44b5-a904-b8d8c3e87bc1)
+
 ![image](https://github.com/nithin-popuri7/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/94154780/0eb557a1-82b7-4827-b69c-3b458c68e50a)
+
+![image](https://github.com/nithin-popuri7/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/94154780/5aaab7f7-92be-477e-802d-34c38fe2f4bf)
 
 
 <hr>
