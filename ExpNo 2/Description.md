@@ -60,9 +60,42 @@ Now, Queue becomes empty, So, terminate these process of iteration.
 <li>If Not Visited, add it to the Queue. Else Continue.</li>
 <li>Iterate steps 4 and 5 until all nodes get visited, and there are no more unvisited nodes.</li>
 
-<hr>
-<h3>Sample Input</h3>
-<hr>
+### Program:
+```
+DEVELOPED BY : k.sucharitha
+
+REGISTER NUMBER : 212221240021
+
+from collections import deque
+from collections import defaultdict
+def bfs(graph,start,visited,path):
+    queue = deque()
+    path.append(start)
+    queue.append(start)
+    visited[start] = True
+    while len(queue) != 0:
+        tmpnode = queue.popleft()
+        for neighbour in graph[tmpnode]:
+            if visited[neighbour] == False:
+                path.append(neighbour)
+                queue.append(neighbour)
+                visited[neighbour] = True
+    return path
+
+graph = defaultdict(list)
+v,e = map(int,input().split())
+for i in range(e):
+    u,v = map(str,input().split())
+    graph[u].append(v)
+    graph[v].append(u)
+
+start = '0'
+path = []
+visited = defaultdict(bool)
+traversedpath = bfs(graph,start,visited,path)
+print(traversedpath)
+```
+### Sample Input
 7 9 <BR>
 A B <BR>
 A C <BR>
@@ -93,8 +126,8 @@ G F <BR>
 <hr>
 <h3>Sample Output</h3>
 <hr>
-['0', '1', '2', '3', '4']
-<hr>
+![image](https://github.com/nithin-popuri7/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/94154780/1142f07a-ace0-4831-aa6c-8928b196258c)
+
 <h3>Result:</h3>
 <hr>
 <p>Thus,a Graph was constructed and implementation of Breadth First Search for the same graph was done successfully.</p>
